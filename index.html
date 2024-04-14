@@ -30,7 +30,7 @@ nav ul li {
     margin-right: 10px;
 }
 
-nav ul li a {
+nav ul li a, .top-link a {
     color: white;
     text-decoration: none;
     font-size: 1.2em;
@@ -42,23 +42,9 @@ section {
     border-bottom: 1px solid #ccc;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 10px;
-    box-sizing: border-box;
-}
-
-button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
+.top-link {
+    text-align: right;
+    margin-right: 20px;
 }
 
 .contact-info {
@@ -87,12 +73,14 @@ button:hover {
     <section id="about">
         <h2>About Me</h2>
         <p>As an experienced Web Developer and certified AWS Solutions Architect, I bring a comprehensive blend of hands-on technical skills and strategic insight into cloud technologies and digital transformation. I excel in fast-paced environments, leveraging agile methodologies and a proactive approach to address complex challenges in the UK's public and private sectors. Eager to apply strategic thinking and technical expertise to resolve complex problems.</p>
+        <div class="top-link"><a href="#top">Back to Top</a></div>
     </section>
 
     <section id="education">
         <h2>Education</h2>
         <p><strong>Cardiff Metropolitan University</strong> (January 2020 – April 2022) - Master of Advanced Computer Science (First Class (1st))</p>
         <p><strong>Deccan College of Engineering and Technology</strong> (April 2011 – May 2015) - Bachelor of Engineering in Information Technology</p>
+        <div class="top-link"><a href="#top">Back to Top</a></div>
     </section>
 
     <section id="experience">
@@ -155,6 +143,7 @@ button:hover {
                 <li>Integrated the manufacturing, sales, and inventory data of various clients in an ERP-based Software Focus 8 Cloud Software for an efficient accounting and reporting solution for the company.</li>
             </ul>
         </div>
+        <div class="top-link"><a href="#top">Back to Top</a></div>
     </section>
 
     <section id="skills">
@@ -167,16 +156,13 @@ button:hover {
         <p><strong>DevOps Tools:</strong> Git, GitHub, Bitbucket</p>
         <p><strong>Analytics:</strong> Google Analytics, Adobe Launch, Tealium</p>
         <p><strong>Licenses & Certifications:</strong> AWS Certified Solutions Architect (Issued on February 12, 2024 Expires on February 12, 2027), Google Analytics Certification (Expiry: December 26, 2024)</p>
+        <div class="top-link"><a href="#top">Back to Top</a></div>
     </section>
 
     <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+        <h2>Contact</h2>
+        <p>Powered by Amazon Amplify</p>
+        <div class="top-link"><a href="#top">Back to Top</a></div>
     </section>
 
     <script>
