@@ -30,10 +30,16 @@ nav ul li {
     margin-right: 10px;
 }
 
-nav ul li a, .top-link a {
+nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.2em;
+}
+
+.top-link a{
+    color:blueviolet;
+    text-decoration: none;
+    font-size: 0.99em;
 }
 
 section {
@@ -45,12 +51,21 @@ section {
 .top-link {
     text-align: right;
     margin-right: 20px;
+    margin-top: 20px;
 }
 
 .contact-info {
     background-color: #f4f4f4;
     padding: 10px;
     text-align: center;
+}
+
+#footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
 }
 </style>
 <body>
@@ -60,7 +75,6 @@ section {
             <li><a href="#education">Education</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -73,7 +87,6 @@ section {
     <section id="about">
         <h2>About Me</h2>
         <p>As an experienced Web Developer and certified AWS Solutions Architect, I bring a comprehensive blend of hands-on technical skills and strategic insight into cloud technologies and digital transformation. I excel in fast-paced environments, leveraging agile methodologies and a proactive approach to address complex challenges in the UK's public and private sectors. Eager to apply strategic thinking and technical expertise to resolve complex problems.</p>
-        <div class="top-link"><a href="#top">Back to Top</a></div>
     </section>
 
     <section id="education">
@@ -105,6 +118,7 @@ section {
                 <li>Managed AWS environments for deploying and scaling applications, improving system resilience and performance.</li>
             </ul>
         </div>
+        <div class="top-link"><a href="#top">Back to Top</a></div>
         <div>
             <h3>Software Developer, VisScore Ltd</h3>
             <p>(January 2022 – May 2022)</p>
@@ -159,11 +173,9 @@ section {
         <div class="top-link"><a href="#top">Back to Top</a></div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
+    <div id="footer">
         <p>Powered by Amazon Amplify</p>
-        <div class="top-link"><a href="#top">Back to Top</a></div>
-    </section>
+    </div>
 
     <script>
     document.querySelectorAll('nav a').forEach(link => {
