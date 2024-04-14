@@ -3,17 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Faizan Khan's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-<script>
-document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetSection = document.querySelector(this.getAttribute('href'));
-        targetSection.scrollIntoView({ behavior: 'smooth' });
-    });
-});
-</script>
 </head>
 <style>
   body, html {
@@ -74,26 +65,54 @@ button:hover {
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <section id="about">
         <h1>About Me</h1>
-        <p>Hello! I'm a web developer with a passion for building beautiful and functional websites.</p>
+        <p>As an experienced Web Developer and certified AWS Solutions Architect, I bring a comprehensive blend of hands-on technical skills and strategic insight into cloud technologies and digital transformation. I excel in fast-paced environments, leveraging agile methodologies and a proactive approach to address complex challenges in the UK's public and private sectors. Eager to apply strategic thinking and technical expertise to resolve complex problems.</p>
+    </section>
+
+    <section id="education">
+        <h1>Education</h1>
+        <p><strong>Cardiff Metropolitan University</strong> (January 2020 – April 2022) - Master of Advanced Computer Science (First Class (1st))</p>
+        <p><strong>Deccan College of Engineering and Technology</strong> (April 2011 – May 2015) - Bachelor of Engineering in Information Technology</p>
     </section>
 
     <section id="projects">
-        <h1>Projects</h1>
+        <h1>Projects and Experience</h1>
         <div class="project">
-            <h2>Project 1</h2>
-            <p>Description of the first project.</p>
+            <h2>Web Developer, Yard Associates Ltd</h2>
+            <p>Led tag management and analytics implementations, designed and executed A/B tests using CSS, significantly improving user engagement and conversion rates for key web pages. (November 2022 – Present)</p>
         </div>
         <div class="project">
-            <h2>Project 2</h2>
-            <p>Description of the second project.</p>
+            <h2>Full-stack Developer, Opti-twin Ltd</h2>
+            <p>Worked with the Lead Developer to test and add features using Typescript in the backend, maintaining backend repository and implementing domain-driven design principles for the Opti-Twin Dashboard. (June 2022 – November 2022)</p>
         </div>
+        <div class="project">
+            <h2>Software Developer, VisScore Ltd</h2>
+            <p>Enhanced the functionality and efficiency of a marketing attribution platform, applying cloud principles to optimize data processing and analytics. (January 2022 – May 2022)</p>
+        </div>
+        <div class="project">
+            <h2>Full Stack Developer, HR in One Ltd</h2>
+            <p>Developed and automated HR systems using complex backend processes with PHP and implemented MVC approach for security and reduced complexity. (March 2021 – January 2022)</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h1>Technical Skills & Certifications</h1>
+        <p><strong>Cloud Platforms:</strong> AWS (Certified Solutions Architect), Azure, Implementing HA and DR strategies, IaaS, PaaS, SaaS</p>
+        <p><strong>Containerization and Orchestration:</strong> Docker, Kubernetes</p>
+        <p><strong>Programming Languages:</strong> Python, JavaScript, PHP, TypeScript</p>
+        <p><strong>Frameworks/Tools:</strong> React.js, Django, Adobe Analytics, Google Tag Manager</p>
+        <p><strong>Databases:</strong> MySQL</p>
+        <p><strong>DevOps Tools:</strong> Git, GitHub, Bitbucket</p>
+        <p><strong>Analytics:</strong> Google Analytics, Adobe Launch, Tealium</p>
+        <p><strong>Licenses & Certifications:</strong> AWS Certified Solutions Architect (Issued on February 12, 2024 Expires on February 12, 2027), Google Analytics Certification (Expiry: December 26, 2024)</p>
     </section>
 
     <section id="contact">
@@ -106,6 +125,14 @@ button:hover {
         </form>
     </section>
 
-    <script src="script.js"></script>
+    <script>
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetSection = document.querySelector(this.getAttribute('href'));
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+    </script>
 </body>
 </html>
