@@ -4,148 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tamkanath Fatima's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .nav-link.active {
+            background-color: #4A5568;
+            color: #fff !important;
+        }
+    </style>
 </head>
-<style>
-  body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
+<body class="bg-gray-50">
 
-nav {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-.top-link a {
-    color: blueviolet;
-    text-decoration: none;
-    font-size: 0.99em;
-}
-
-section {
-    padding: 20px;
-    margin: 10px;
-    border-bottom: 1px solid #ccc;
-}
-
-.top-link {
-    text-align: right;
-    margin-right: 20px;
-    margin-top: 20px;
-}
-
-.contact-info {
-    background-color: #f4f4f4;
-    padding: 10px;
-    text-align: center;
-}
-
-#footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    margin-top: 20px;
-}
-</style>
-<body>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-        </ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gray-900 text-white py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="#about">About</a>
+                    <a class="nav-link" href="#education">Education</a>
+                    <a class="nav-link" href="#experience">Experience</a>
+                    <a class="nav-link" href="#skills">Skills</a>
+                </div>
+            </div>
+        </div>
     </nav>
 
-    <div class="contact-info">
-        <h1>Tamkanath Fatima</h1>
-        <p>Cardiff, UK | Mob: +44 7442395705 | Email: tamfat722@gmail.com</p>
-        <p><a href="https://www.linkedin.com/in/tamkanath-fatima/">LinkedIn</a></p>
+    <!-- Contact Info -->
+    <div class="text-center py-5 bg-white">
+        <h1 class="text-3xl font-bold">Tamkanath Fatima</h1>
+        <p class="text-gray-700 mb-2">Cardiff, UK | Mob: +44 7442395705 | Email: tamfat722@gmail.com</p>
+        <a href="https://www.linkedin.com/in/tamkanath-fatima/" class="text-blue-500">LinkedIn</a>
     </div>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Pursued Bachelor in Computer Science. I have worked as a Web Developer with various international clients. I am actively seeking Web Developer roles in order to leverage my Web Development and IT skills. I have the right to work in UK and can relocate.</p>
-    </section>
+    <!-- Sections -->
+    <div class="container mx-auto px-4">
+        <section id="about" class="my-5">
+            <h2 class="text-2xl font-bold mb-3">About Me</h2>
+            <p>Pursued Bachelor in Computer Science. I have worked as a Web Developer with various international clients. I am actively seeking Web Developer roles in order to leverage my Web Development and IT skills. I have the right to work in UK and can relocate.</p>
+        </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>Jawaharlal Nehru Technological University</strong> (2016 – 2020) - Bachelor of Engineering in Computer Science</p>
-        <p>Major Project: Developed Lost and Found Prototype using HTML, CSS, JavaScript with backend technologies PHP and MySQL</p>
-        <div class="top-link"><a href="#top">Back to Top</a></div>
-    </section>
+        <section id="education" class="my-5">
+            <h2 class="text-2xl font-bold mb-3">Education</h2>
+            <p><strong>Jawaharlal Nehru Technological University</strong> (2016 – 2020) - Bachelor of Engineering in Computer Science</p>
+            <p>Major Project: Developed Lost and Found Prototype using HTML, CSS, JavaScript with backend technologies PHP and MySQL</p>
+            <div class="text-right mt-4"><a href="#top" class="text-blue-500">Back to Top</a></div>
+        </section>
 
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <div>
-            <h3>Web Developer, Advent Global Solutions</h3>
-            <p>(January 2023 – February 2024 | Remote)</p>
-            <ul>
-                <li>Created, tested, and deployed visually appealing and responsive web pages for clients using HTML and CSS with designs that resonate with the client's branding.</li>
-                <li>Tested the webpages using Windows Developer Tools for different devices and sizes. Inspected the webpage and tested new designs within the browser before implementing the changes.</li>
-                <li>Resolved various CSS issues with different clients by inspecting the pages and debugging in the browser (DOM Manipulation).</li>
-                <li>Applied quick Bootstrap components for quick layout and responsive designs for clients.</li>
-                <li>Optimized the PDP pages with better Grid views and appealing layouts based on designs provided which resulted in better conversion rates on the websites.</li>
-                <li>Created custom styles and enhanced the page’s visual appeal using Tailwind CSS.</li>
-                <li>Used Adobe Target to create personalized experiences and conduct multivariate testing to identify the most effective design elements. Delivered the landing page on time, leading to a 25% increase in product sign-ups within the first week of launch and a 20% improvement in user engagement due to personalized content.</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Junior Web Developer, Advent Global Solutions</h3>
-            <p>(March 2021 - December 2022 | Hyderabad, India)</p>
-            <ul>
-                <li>Assisted senior developers in designing and adding new design elements in the web pages for clients.</li>
-                <li>Played a key role in implementing the logic and designing the Recently Viewed Banner on Product Display Pages where the Recently Viewed Products banner would display items that were recently viewed by the user during interactions with the website.</li>
-                <li>Assisted senior developers in developing and testing WordPress websites and setting up plugins WooCommerce and configuring basic settings such as store location and payment methods. Set up payment gateways such as PayPal and Stripe along with offering shipping rates and free shipping for eligible products.</li>
-                <li>Added plugins like Trustpilot to monitor the reviews and build trust with potential customers which eventually increased the conversion rates.</li>
-            </ul>
-        </div>
-        <div class="top-link"><a href="#top">Back to Top</a></div>
-    </section>
+        <section id="experience" class="my-5">
+            <h2 class="text-2xl font-bold mb-3">Professional Experience</h2>
+            <div>
+                <h3>Web Developer, Advent Global Solutions</h3>
+                <p>(January 2023 – February 2024 | Remote)</p>
+                <ul>
+                    <li>Created, tested, and deployed visually appealing and responsive web pages for clients using HTML and CSS with designs that resonate with the client's branding.</li>
+                    <li>Tested the webpages using Windows Developer Tools for different devices and sizes. Inspected the webpage and tested new designs within the browser before implementing the changes.</li>
+                    <li>Resolved various CSS issues with different clients by inspecting the pages and debugging in the browser (DOM Manipulation).</li>
+                    <li>Applied quick Bootstrap components for quick layout and responsive designs for clients.</li>
+                    <li>Optimized the PDP pages with better Grid views and appealing layouts based on designs provided which resulted in better conversion rates on the websites.</li>
+                    <li>Created custom styles and enhanced the page’s visual appeal using Tailwind CSS.</li>
+                    <li>Used Adobe Target to create personalized experiences and conduct multivariate testing to identify the most effective design elements. Delivered the landing page on time, leading to a 25% increase in product sign-ups within the first week of launch and a 20% improvement in user engagement due to personalized content.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Junior Web Developer, Advent Global Solutions</h3>
+                <p>(March 2021 - December 2022 | Hyderabad, India)</p>
+                <ul>
+                    <li>Assisted senior developers in designing and adding new design elements in the web pages for clients.</li>
+                    <li>Played a key role in implementing the logic and designing the Recently Viewed Banner on Product Display Pages where the Recently Viewed Products banner would display items that were recently viewed by the user during interactions with the website.</li>
+                    <li>Assisted senior developers in developing and testing WordPress websites and setting up plugins WooCommerce and configuring basic settings such as store location and payment methods. Set up payment gateways such as PayPal and Stripe along with offering shipping rates and free shipping for eligible products.</li>
+                    <li>Added plugins like Trustpilot to monitor the reviews and build trust with potential customers which eventually increased the conversion rates.</li>
+                </ul>
+            </div>
+            <div class="text-right mt-4"><a href="#top" class="text-blue-500">Back to Top</a></div>
+        </section>
 
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <p><strong>Languages:</strong> HTML, CSS, JavaScript, PHP, Python</p>
-        <p><strong>Libraries:</strong> jQuery, React</p>
-        <p><strong>Reporting tools:</strong> Jira</p>
-        <p><strong>Soft Skills:</strong> Communication, Teamwork, Problem Solving, Working with deadlines, Logical Thinking</p>
-        <p><strong>Certifications:</strong> Google Analytics Certification (Expiry: December 26, 2024)</p>
-        <div class="top-link"><a href="#top">Back to Top</a></div>
-    </section>
+        <section id="skills" class="my-5">
+            <h2 class="text-2xl font-bold mb-3">Technical Skills</h2>
+            <p><strong>Languages:</strong> HTML, CSS, JavaScript, PHP, Python</p>
+            <p><strong>Libraries:</strong> jQuery, React</p>
+            <p><strong>Reporting tools:</strong> Jira</p>
+            <p><strong>Soft Skills:</strong> Communication, Teamwork, Problem Solving, Working with deadlines, Logical Thinking</p>
+            <p><strong>Certifications:</strong> Google Analytics Certification (Expiry: December 26, 2024)</p>
+            <div class="text-right mt-4"><a href="#top" class="text-blue-500">Back to Top</a></div>
+        </section>
+    </div>
 
-    <div id="footer">
+    <!-- Footer -->
+    <div id="footer" class="text-center py-4 bg-gray-900 text-white mt-5">
         <p>Powered by AWS Amplify.</p>
     </div>
 
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Smooth scrolling functionality -->
     <script>
-    document.querySelectorAll('nav a').forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetSection = document.querySelector(this.getAttribute('href'));
-            targetSection.scrollIntoView({ behavior: 'smooth' });
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelectorAll('nav a').forEach(nav => nav.classList.remove('active'));
+                this.classList.add('active');
+                const targetSection = document.querySelector(this.getAttribute('href'));
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            });
         });
-    });
     </script>
 </body>
 </html>
